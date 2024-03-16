@@ -30,7 +30,7 @@ body{
     position: fixed;
     bottom: 0;
     width: 100%;
-    height: 72px;
+    height: 4.5rem;
     border-radius: 1rem;
 }
 a{
@@ -91,7 +91,7 @@ a{
     
  }
  .box1{
-    height: 8rem;
+    height: 10rem;
     background-color: #232323;
     border-radius: 0.75rem;
     margin: 0.75rem 0 1.75rem 0;
@@ -116,9 +116,7 @@ a{
     width: fit-content;
  }
  .box1 .badge:hover{
-    font-size: 14.6px;
-    
-    
+    font-size: 14.6px; 
  }
  .sticky-navbar{
     position: sticky;
@@ -137,6 +135,15 @@ a{
     display: flex;
     justify-content: space-between;
     
+ }
+ .sticky-nav-options i{
+    margin-top: 0.5rem;
+ }
+ .sticky-nav-options i:hover{
+    font-size: 1.1rem;
+ }
+ .sticky-nav-options button:hover{
+    font-size: 1rem;
  }
  .nav-item{
     margin-right: 1rem;
@@ -191,60 +198,75 @@ a{
    
 }
 .album{
-    width: 25%;
+    /* width: 25%; */
     background-color: #000;
     display: flex;
-    justify-content: space-between;
-    padding: 5px 1.5rem;
+    justify-content: flex-start;
+    padding: 5px 0.5rem 0.5rem 0.5rem;
+    
     }
-.albumdetails{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-}
         
     
 .albumpara{
-    font-size: 0.5rem;
-    display: inline-block;
-    line-height: 1.5px;
+   
+    margin: 0 0.5rem 0 0.5rem;
     margin-left: 0.5rem;
+    padding: 0.75rem 0.5rem 0.7rem 0.75rem;
+    margin-right: 0.5rem;
+    display: inline-block;
+
 }
+.p1{
+    height: 1rem;
+    width: 6rem;
+   
+}
+.songname{
+    font-weight: 600;
+    
+}
+.singername{
+    opacity: 0.75;
+    font-size: 0.75rem;
+}
+.singername:hover{
+    opacity: 1;
+    
+}
+
 .albumicons{
-   align-items: center;
-    justify-content: center;
-    font-size: 1rem;
-    margin-right: 5rem;
-    padding: 1.5rem 2px 2px 2px;
+
+    display: flex;
+    align-items: center;
+    
+    
 }
 .albumicons i{
-    margin-right: 3px;
+    height: 2rem;
+    width: 1rem;
+    margin-right: 0.5rem;
     opacity: 0.7;
+    padding-top: 0.5rem;
+    margin-right: 0.5rem;
+
 }
 .albumicons i:hover{
     opacity: 1;
 }
-.p1{
-    opacity: 1;
-    font-size: 0.75rem;
-    font-weight: 600;
-}
-.p2{
-    opacity: 0.9;
-    font-size: 0.5rem;
-}
+
 
 .albumimg{
-   height: 3rem;
-    width: 3rem;
+   height: 3.5rem;
+    width: 3.5rem;
 }
 .albumimg:hover{
-    height: 3.5rem;
-    width: 3.5rem;
+    height: 4rem;
+    width: 4rem;
 }
 .player{
     width: 50%;
     background-color: #000;
+    
 }
 .controls{
     width: 25%;
@@ -285,6 +307,7 @@ a{
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 .player-control-icon{
     height: 1rem;
@@ -318,3 +341,111 @@ a{
     margin-top: -6px;
 }
 
+@media(max-width:904px){
+        .hideControls{
+            display: none;
+        }
+        .hidePlayer{
+            width: 70%;
+        }
+        .hideAlbum{
+            width: 30%;
+        }
+}
+@media(max-width:686px){
+    .player{
+        width: 40%;
+        margin-left:5rem ;
+    }
+}
+
+@media(max-width:563px){
+    .music-player{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        
+     }
+    
+    .progress-bar{
+        width: 10rem;
+        margin-left: 1rem;
+    }
+}
+@media(max-width:540px){
+    .music-player{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        
+     }
+    .progress-bar{
+        width: 10rem;
+        margin-left: 1rem;
+    }
+   .main-content{
+    display: none;
+   }
+   .box1{
+    display: flex;
+    flex-wrap: wrap;
+   }
+}
+@media(max-width:539px){
+    .hideAlbum{
+      display: none;
+    }
+    .main{
+        overflow: auto;
+    }
+}
+@media(max-width:287px){
+    .hidePlayer{
+        display: none;
+    }
+    .lib-options a{
+        display: none;
+    }
+    .nav-option i{
+        display: none;
+    }
+}
+
+@media(max-width:248px){
+    .box1{
+        height: 12rem;
+    }
+    .box12{
+        height: 13rem;
+        
+    }
+    .pillSize{
+        height: 3.5rem;
+    }
+}
+@media(max-width:1024px){
+    .sidebar{
+        overflow: auto;
+    }
+}
+
+@media(max-width:227px){
+    .main{
+        font-size: 0.2rem;
+    }
+    .sidebar{
+        overflow: auto;
+    }
+    .box1{
+        height: 18rem;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0.5rem;
+    }
+    .music-player{
+        display: none;
+    }
+    .pillSize{
+        padding: 0 0.5rem 0 0.5rem;
+    }
+}
